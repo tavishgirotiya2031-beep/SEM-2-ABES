@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Bistro | Modern Dining</title>
+    
+    <style>
+        /* CSS Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fafafa;
+            color: #2d3436;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #2d3436;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        /* Menu Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .food-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Nested List Styling */
+        .menu-list {
+            list-style: none;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .category-name {
+            font-size: 1.8rem;
+            color: #d35400;
+            margin-top: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .category-name:first-child { margin-top: 0; }
+
+        .item-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 15px;
+        }
+
+        .dish {
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .ingredients {
+            list-style: disc;
+            padding-left: 40px;
+            color: #636e72;
+            font-size: 0.95rem;
+            font-style: italic;
+        }
+
+        /* Reservation Button */
+        .reservation-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 40px;
+            background: #ffeaa7;
+            border-radius: 12px;
+        }
+
+        .res-link {
+            display: inline-block;
+            background-color: #d35400;
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .res-link:hover {
+            background-color: #e67e22;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>LUMINA BISTRO</h1>
+        <p>Fresh Ingredients. Bold Flavors. Memorable Nights.</p>
+    </header>
+
+    <div class="container">
+        
+        
+        
+        <section class="menu-list">
+            <h2 style="text-align: center; margin-bottom: 20px;">The Evening Menu</h2>
+
+            <ul>
+                <li class="category-name">Appetizers</li>
+                <ul class="item-list">
+                    <li>
+                        <div class="dish"><span>Crispy Calamari</span> <span>$14</span></div>
+                        <ul class="ingredients">
+                            <li>Hand-battered squid</li>
+                            <li>Spicy aioli dip</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <li class="category-name">Main Course</li>
+                <ul class="item-list">
+                    <li>
+                        <div class="dish"><span>Wild Mushroom Risotto</span> <span>$24</span></div>
+                        <ul class="ingredients">
+                            <li>Arborio rice</li>
+                            <li>Truffle oil drizzle</li>
+                            <li>Parmesan shavings</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="dish"><span>Herb Roasted Chicken</span> <span>$28</span></div>
+                        <ul class="ingredients">
+                            <li>Organic free-range chicken</li>
+                            <li>Garlic mashed potatoes</li>
+                        </ul>
+                    </li>
+                </ul>
+            </ul>
+        </section>
+
+        <div class="reservation-section">
+            <h2>Join Us Tonight</h2>
+            <p style="margin-bottom: 20px;">Tables fill up fast! Secure your spot now.</p>
+            <a href="https://www.opentable.com" class="res-link" target="_blank">BOOK A RESERVATION</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Result Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student Result Calculator</h1>
+
+    <input type="text" id="name" placeholder="Enter Student Name">
+
+    <div class="marks">
+        <input type="number" id="sub1" placeholder="Subject 1 Marks">
+        <input type="number" id="sub2" placeholder="Subject 2 Marks">
+        <input type="number" id="sub3" placeholder="Subject 3 Marks">
+        <input type="number" id="sub4" placeholder="Subject 4 Marks">
+        <input type="number" id="sub5" placeholder="Subject 5 Marks">
+    </div>
+
+    <button onclick="calculateResult()">Calculate Result</button>
+
+    <div class="result">
+        <p>Total: <span id="total"></span></p>
+        <p>Average: <span id="average"></span></p>
+        <p>Grade: <span id="grade"></span></p>
+        <p>Result: <span id="result"></span></p>
+    </div>
+
+</div>
+
+<script src="experiment4.js"></script>
+
+</body>
+</html>

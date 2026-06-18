@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indigo Spice | Authentic Indian Cuisine</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            margin: 0;
+            background-color: #c0843d; /* Saffron/Clay background */
+            display: flex;
+            justify-content: center;
+        }
+
+        .web-page {
+            background-color: white;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 0 50px rgba(0,0,0,0.3);
+        }
+
+        /* Navigation Header */
+        nav {
+            background-color: #1e3a63; /* Indigo Blue */
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 { margin: 0; font-size: 1.5rem; letter-spacing: 1px; }
+
+        /* Hero Image */
+        .hero-banner {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Menu Content */
+        .content { padding: 40px; }
+
+        h2.journey { color: #1e3a63; margin-bottom: 30px; font-size: 2rem; }
+        
+        h3.category-title { 
+            color: #c0843d; 
+            font-size: 1.6rem; 
+            border-bottom: 1px solid #eee;
+            margin-top: 30px;
+            padding-bottom: 10px;
+        }
+
+        /* Nested List Grid Layout */
+        .menu-grid {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        /* Circular Food Images */
+        .food-thumb {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid #c0843d;
+            object-fit: cover;
+        }
+
+        .details { flex-grow: 1; }
+        .details b { display: block; font-size: 1.1rem; color: #333; }
+        .details i { font-size: 0.85rem; color: #777; }
+        .price { font-weight: bold; color: #c0843d; font-size: 1.2rem; }
+
+        /* Nested List for Ingredients */
+        .ingredients-list {
+            list-style: none;
+            padding: 0;
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* Footer / Reservation */
+        footer {
+            background-color: #1e3a63;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .res-btn {
+            display: inline-block;
+            background-color: #c0843d;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .res-btn:hover { background-color: #a06e32; }
+    </style>
+</head>
+<body>
+
+<div class="web-page">
+    <nav>
+        <h1>INDIGO SPICE</h1>
+        <div style="font-size: 0.9rem;">Home &nbsp; Menu &nbsp; About</div>
+    </nav>
+<img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80" alt="Indian Feast" class="hero-banner">
+
+    <div class="content">
+        <h2 class="journey">Our Culinary Journey</h2>
+
+        <h3 class="category-title">Appetizers</h3>
+        <ul class="menu-grid">
+            <li class="menu-item">
+              
+                <div class="details">
+                    <b>Samosa Chaat</b>
+                    <ul class="ingredients-list">
+                        <li>Crispy Pastry, Chickpeas</li>
+                        <li>Tangy Chutney</li>
+                    </ul>
+                </div>
+                <div class="price">$5</div>
+            </li>
+            <li class="menu-item">
+                <div class="details">
+                    <b>Paneer Tikka</b>
+                    <i>Grilled Cheese & Peppers</i>
+                </div>
+                <div class="price">$12</div>
+            </li>
+        </ul>
+
+        <h3 class="category-title">Main Course</h3>
+        <ul class="menu-grid">
+            <li class="menu-item">
+                <div class="details">
+                    <b>Chicken Biryani</b>
+                    <i>Basmati Rice, Saffron, Spices</i>
+                </div>
+                <div class="price">$18</div>
+            </li>
+            <li class="menu-item">
+                <div class="details">
+                    <b>Palak Paneer</b>
+                    <i>Spinach & Cottage Cheese</i>
+                </div>
+                <div class="price">$16</div>
+            </li>
+        </ul>
+
+        <h3 class="category-title">Desserts</h3>
+        <ul class="menu-grid">
+            <li class="menu-item">
+                <div class="details">
+                    <b>Gulab Jamun</b>
+                    <i>Milk Dumplings in Syrup</i>
+                </div>
+                <div class="price">$8</div>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>RESERVATIONS</p>
+        <a href="https://www.opentable.com" class="res-btn">BOOK A TABLE</a>
+    </footer>
+</div>
+
+</body>
+</html>
